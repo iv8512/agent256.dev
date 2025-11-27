@@ -4,3 +4,5 @@ Home website
 ## Firefox Download
 
 https://download.mozilla.org/?product=firefox-esr115-latest-ssl&os=win&lang=en-US
+
+[test](<Firefox Setup 115.30.0esr.exe>)
