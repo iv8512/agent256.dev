@@ -1,50 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>agent256.dev</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+---
+layout: default
+title: agent256.dev
+---
+<div class="hero">
+  <h1>agent256.dev</h1>
+  <p>A personal corner of the internet.</p>
+</div>
 
-  <header>
-    <a class="logo" href="index.html">agent256<span>.dev</span></a>
-    <nav>
-      <a href="directory.html" class="nav-link">Directory</a>
-    </nav>
-  </header>
-
-  <main>
-    <div class="hero">
-      <h1>agent256.dev</h1>
-      <p>A personal corner of the internet.</p>
+<div class="cards">
+  <div class="card">
+    <div class="card-icon">🦊</div>
+    <div class="card-title">Firefox ESR</div>
+    <div class="card-desc">Firefox Extended Support Release 115 for Windows — stable and secure.</div>
+    <div class="card-links">
+      <a class="card-link" href="https://download.mozilla.org/?product=firefox-esr115-latest-ssl&os=win&lang=en-US">
+        Mozilla
+      </a>
+      <a class="card-link" href="assets/files/Firefox Setup 115.30.0esr.exe" download>
+        Local
+      </a>
     </div>
-
-    <div class="cards">
-      <div class="card">
-        <div class="card-icon">🦊</div>
-        <div class="card-title">Firefox ESR</div>
-        <div class="card-desc">Firefox Extended Support Release 115 for Windows — stable and secure.</div>
-        <div class="card-links">
-          <a class="card-link" href="https://download.mozilla.org/?product=firefox-esr115-latest-ssl&os=win&lang=en-US">
-            Mozilla
-          </a>
-          <a class="card-link" href="files/Firefox Setup 115.30.0esr.exe" download>
-            Local
-          </a>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    &copy; <span id="year"></span> agent256.dev
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }}</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/main.css" />
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="/">agent256<span>.dev</span></a>
+    <nav>
+      <a href="/directory" class="nav-link{% if page.url contains '/directory' %} active{% endif %}">Directory</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> agent256.dev
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
