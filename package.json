@@ -1,0 +1,12 @@
+{
+  "name": "agent256-dev",
+  "private": true,
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

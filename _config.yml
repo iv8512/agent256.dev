@@ -1,1 +1,9 @@
 permalink: /:basename
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - wrangler.jsonc
+  - node_modules
