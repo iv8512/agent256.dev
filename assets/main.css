@@ -5,18 +5,13 @@
 }
 
 :root {
-  --bg: #0d1117;
-  --surface: #161b22;
-  --border: #30363d;
-  --text: #e6edf3;
-  --muted: #8b949e;
-  --accent: #58a6ff;
-  --accent-hover: #79c0ff;
+  --color-accent: #3d7eff;
+  --color-accent-hover: #5590ff;
 }
 
 body {
-  background: var(--bg);
-  color: var(--text);
+  background: var(--color-bg);
+  color: var(--color-text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   min-height: 100vh;
   display: flex;
@@ -33,13 +28,13 @@ header {
 .logo {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--text);
+  color: var(--color-text);
   letter-spacing: -0.02em;
   text-decoration: none;
 }
 
 .logo span {
-  color: var(--muted);
+  color: var(--color-text-muted);
 }
 
 nav {
@@ -50,14 +45,14 @@ nav {
 
 .nav-link {
   font-size: 0.875rem;
-  color: var(--muted);
+  color: var(--color-text-muted);
   text-decoration: none;
   transition: color 0.15s;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--text);
+  color: var(--color-text);
 }
 
 .project-list {
@@ -65,7 +60,7 @@ nav {
   max-width: 560px;
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--border);
+  border: 1px solid var(--color-panel-active);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -76,9 +71,9 @@ nav {
   gap: 1rem;
   padding: 1rem 1.25rem;
   text-decoration: none;
-  color: var(--text);
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
+  color: var(--color-text);
+  background: var(--color-panel);
+  border-bottom: 1px solid var(--color-panel-active);
   transition: background 0.15s;
 }
 
@@ -87,7 +82,7 @@ nav {
 }
 
 .project-item:hover {
-  background: var(--border);
+  background: var(--color-border-hover);
 }
 
 .project-icon {
@@ -117,22 +112,22 @@ nav {
 
 .project-url {
   font-size: 0.78rem;
-  color: var(--accent);
+  color: var(--color-accent);
 }
 
 .project-desc {
   font-size: 0.8rem;
-  color: var(--muted);
+  color: var(--color-text-muted);
 }
 
 .project-arrow {
-  color: var(--muted);
+  color: var(--color-text-muted);
   font-size: 1rem;
   transition: color 0.15s, transform 0.15s;
 }
 
 .project-item:hover .project-arrow {
-  color: var(--accent);
+  color: var(--color-accent);
   transform: translateX(3px);
 }
 
@@ -160,7 +155,7 @@ main {
 }
 
 .hero p {
-  color: var(--muted);
+  color: var(--color-text-muted);
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -174,8 +169,8 @@ main {
 }
 
 .card {
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: var(--color-panel);
+  border: 1px solid var(--color-panel-active);
   border-radius: 10px;
   padding: 1.5rem;
   display: flex;
@@ -185,7 +180,7 @@ main {
 }
 
 .card:hover {
-  border-color: var(--accent);
+  border-color: var(--color-accent);
 }
 
 .card-icon {
@@ -196,12 +191,12 @@ main {
 .card-title {
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--text);
+  color: var(--color-text);
 }
 
 .card-desc {
   font-size: 0.85rem;
-  color: var(--muted);
+  color: var(--color-text-muted);
   line-height: 1.5;
   flex: 1;
 }
@@ -219,13 +214,13 @@ main {
   gap: 0.35rem;
   font-size: 0.85rem;
   font-weight: 500;
-  color: var(--accent);
+  color: var(--color-accent);
   text-decoration: none;
   transition: color 0.15s;
 }
 
 .card-link:hover {
-  color: var(--accent-hover);
+  color: var(--color-accent-hover);
 }
 
 .card-link::after {
@@ -246,6 +241,6 @@ footer {
   padding: 1.5rem 2rem;
   text-align: center;
   font-size: 0.8rem;
-  color: var(--muted);
-  border-top: 1px solid var(--border);
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-border);
 }

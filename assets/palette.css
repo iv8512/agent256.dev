@@ -1,0 +1,14 @@
+/* Site palette, separate from @toolbox/ui/theme.css (desktop apps). Copy into other site projects to keep them in sync. */
+:root {
+    --color-bg: #0d1117;
+    --color-panel: #161b22;
+    --color-panel-alt: #161b22;
+    --color-panel-hover: #1c222c;
+    --color-panel-active: #21262d;
+    --color-border: #30363d;
+    --color-border-strong: #30363d;
+    --color-border-hover: #3a4048;
+    --color-text: #e6edf3;
+    --color-text-muted: #8b949e;
+    --color-text-dim: #6e7681;
+}
